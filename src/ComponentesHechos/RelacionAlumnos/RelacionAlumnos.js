@@ -77,7 +77,7 @@ class RelacionAlumnos extends Component {
 
 
     miFuncion(){
-        fetch('http://tallerbackend.herokuapp.com/ApiController/programaAlumnos?fecha_inicio='+this.state.anioini+'&fecha_fin='+this.state.aniofin)//hace el llamado al dominio que se le envió donde retornara respuesta de la funcion
+        fetch('http://estadistica-sigap-backend.herokuapp.com/ApiController/programaAlumnos?fecha_inicio='+this.state.anioini+'&fecha_fin='+this.state.aniofin)//hace el llamado al dominio que se le envió donde retornara respuesta de la funcion
         .then((response)=>{
             return response.json();
         })
@@ -173,7 +173,7 @@ class RelacionAlumnos extends Component {
 
     miFuncion2(){
         
-        fetch('http://tallerbackend.herokuapp.com/ApiController/demandaInversa?fecha_inicio='+this.state.anioini+'&fecha_fin='+this.state.aniofin)
+        fetch('http://estadistica-sigap-backend.herokuapp.com/ApiController/demandaInversa?fecha_inicio='+this.state.anioini+'&fecha_fin='+this.state.aniofin)
         .then((response)=>{
             return response.json();
         })
